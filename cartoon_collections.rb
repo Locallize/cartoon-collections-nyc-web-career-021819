@@ -30,6 +30,6 @@ def find_the_cheese (my_cheese)
 
     
     cheese_types.find do |items|
-          items.any? == my_cheese
+      cheese_types.include?(items)
     end
 end
