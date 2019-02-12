@@ -27,13 +27,9 @@ end
 
 def find_the_cheese (my_cheese)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  counter= 0
+
     
     cheese_types.find do |items|
-      while counter < my_cheese.length
-          items == my_cheese[counter]
-          counter+= 1
-        end
+          items.any? == my_cheese
     end
-
 end
